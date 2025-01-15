@@ -1,1 +1,1 @@
-# frontend-react-2nd-woori-acoount-book
+# frontend-react-2nd-woori-account-book
