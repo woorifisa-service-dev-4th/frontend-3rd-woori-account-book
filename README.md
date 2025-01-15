@@ -1,1 +1,1 @@
-# frontend-react-2nd-woori-account-book
+### 리액트로 만드는 우리가계부
