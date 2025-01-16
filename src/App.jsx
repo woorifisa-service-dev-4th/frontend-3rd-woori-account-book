@@ -3,6 +3,8 @@ import Main from "./layouts/Main";
 import DefaultLayout from "./layouts/DefaultLayout";
 import CustomTable from "./components/CustomTable";
 import Footer from "./components/footer/Footer";
+import { InputContext, InputProvider } from "./contexts/InputContext";
+import Input from "./components/input/Input"
 
 const App = () => {
     const dummyData = [
@@ -31,10 +33,14 @@ const App = () => {
     return (
         <>
             <DefaultLayout>
-              <Footer data={dummyData}/>
-            </DefaultLayout>
-        </>
-    );
-};
+            <InputProvider>
+              <Input />
+            </InputProvider>
+            <Footer data={dummyData}/>
+          </DefaultLayout>
+      </>
+  );
+}
 
-export default App;
+
+export default App
