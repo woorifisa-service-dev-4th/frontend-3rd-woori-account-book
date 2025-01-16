@@ -73,5 +73,6 @@ fronted-3rd-woori-account-book
 <img width="177" alt="image" src="https://github.com/user-attachments/assets/2bab3c26-9e37-44af-b59b-a8a4e5a13e20" />
 
 
-### 📍 UI Layout
-<img width="1552" alt="image" src="https://github.com/user-attachments/assets/46e92191-8ccb-466c-b4c9-98a3d5c9a3f3" />
+### 📍 완성된 페이지 
+<img width="1552" alt="image" src="https://github.com/user-attachments/assets/aab87866-44c2-4369-8316-2fa529b84973" />
+
