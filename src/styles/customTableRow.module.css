@@ -1,0 +1,10 @@
+.container_table_contents {
+    border: 1px solid #b9b9b9;
+    border-collapse: collapse;
+    background-color: white;
+    height: 5vh;
+}
+
+.container_table_contents td {
+    border: 1px solid #949494;
+}
