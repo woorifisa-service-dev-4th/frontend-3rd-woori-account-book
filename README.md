@@ -36,11 +36,15 @@
 ```
 fronted-3rd-woori-account-book
 ├── node_modules // .gitignore 사용하여 업로드 x
-├── public
-├── src
+├── README.md
 ├── .gitignore
 ├── package.json
-└── README.md
+└── src
+      ├── assets // 이미지 혹은 폰트
+      ├── components // 재사용 가능한 컴포넌트들
+      ├── contexts // contextAPI
+      ├── layouts // 기본적인 레이아웃 구조
+      └── styles // CSS
 ```
 
 </br>
