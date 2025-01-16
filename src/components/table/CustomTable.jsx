@@ -3,11 +3,10 @@ import styles from "../../styles/customTable.module.css";
 import CustomTableRow from "../table/CustomTableRow";
 import { InputContext } from "../../contexts/InputContext";
 
-const CustomTable = ({ data }) => {
-    const [sortedData, setSortedData] = useState(data); // 초기값은 data로 설정
-    const [isSorted, setIsSorted] = useState(false); // 정렬 여부를 추적하는 상태
-
+const CustomTable = () => {
     const { dataValue } = useContext(InputContext);
+    const [sortedData, setSortedData] = useState(dataValue); // 초기값은 data로 설정
+    const [isSorted, setIsSorted] = useState(false); // 정렬 여부를 추적하는 상태
 
     // 공통 정렬 함수
     const sortTable = (column, isAscending, isDateSort = false) => {
