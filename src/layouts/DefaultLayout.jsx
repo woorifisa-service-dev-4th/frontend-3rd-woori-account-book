@@ -1,22 +1,25 @@
 import React from "react";
-import Main from "./Main";
+import styles from "../styles/defaultLayout.module.css";
 
 const DefaultLayout = ({ children }) => {
     return (
-        <div class="container">
-            <nav class="layout_left">
-                <div class="layout_left_logo">
-                    <img src="logo.png" class="img_logo" />
-                    <p class="layout_logo">우리가계부</p>
+        <div className={styles.container}>
+            <nav className={styles.layout_left}>
+                <div className={styles.layout_left_logo}>
+                    <img
+                        src="src/assets/logo.png"
+                        className={styles.img_logo}
+                    />
+                    <p className={styles.layout_logo}>우리가계부</p>
                 </div>
-                <div class="container_left_bar">
-                    <p class="container_home">HOME</p>
-                    <p class="container_table_modal">TABLE</p>
+                <div className={styles.container_left_bar}>
+                    <p className={styles.container_home}>HOME</p>
+                    <p className={styles.container_table_modal}>TABLE</p>
                 </div>
                 <dialog id="dialog-1"></dialog>
             </nav>
 
-            <div className="layout_right">{children}</div>
+            <div className={styles.layout_right}>{children}</div>
         </div>
     );
 };
