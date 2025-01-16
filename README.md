@@ -49,6 +49,10 @@ fronted-3rd-woori-account-book
 
 </br>
 
+### 📍 App.jsx 구조
+<img width="346" alt="image" src="https://github.com/user-attachments/assets/bd89ecb5-8aef-4432-aeea-97ddd3ac9b68" />
+
+
 ## UI Style Gideline
 
 ### 📍 Font
