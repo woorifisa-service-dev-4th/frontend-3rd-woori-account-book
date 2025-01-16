@@ -12,10 +12,10 @@ const Input = () => {
     const handleAddDataValue = () => {
         const date = document.getElementById('date').value;
         const type = document.getElementById('select').value;
-        const description = document.getElementById('description').value;
+        const text = document.getElementById('description').value;
         const money = document.getElementById('money').value;
     
-        if (!date || !type || !description || !money) {
+        if (!date || !type || !text || !money) {
             console.error('값이 누락되었습니다! 모든 필드를 입력해주세요.');
             return;
         }
@@ -24,7 +24,7 @@ const Input = () => {
             id: dataValue.length + 1,
             date,
             type,
-            description,
+            text,
             money
         };
 
