@@ -163,11 +163,11 @@ const App = () => {
             <DefaultLayout>
                 <InputProvider>
                     <Input />
+                    <Main>
+                        <CustomTable />
+                    </Main>
+                    <Footer />
                 </InputProvider>
-                <Main>
-                    <CustomTable data={data} />
-                </Main>
-                <Footer data={dummyData} />
             </DefaultLayout>
         </>
     );

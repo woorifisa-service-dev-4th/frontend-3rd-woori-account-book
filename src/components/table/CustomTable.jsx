@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import styles from "../../styles/customTable.module.css";
 import CustomTableRow from "../table/CustomTableRow";
+import { InputContext } from "../../contexts/InputContext";
 
 const CustomTable = ({ data }) => {
     const [sortedData, setSortedData] = useState(data); // 초기값은 data로 설정
     const [isSorted, setIsSorted] = useState(false); // 정렬 여부를 추적하는 상태
+
+    const { dataValue } = useContext(InputContext);
 
     // 공통 정렬 함수
     const sortTable = (column, isAscending, isDateSort = false) => {
@@ -28,12 +31,6 @@ const CustomTable = ({ data }) => {
 
         setSortedData(sortedRows); // 정렬된 데이터로 업데이트
         setIsSorted(true); // 정렬 상태를 true로 변경
-    };
-
-    // 버튼을 누르지 않으면 원본 데이터로 돌아가도록 하는 함수
-    const resetData = () => {
-        setSortedData(data); // 원본 데이터로 복구
-        setIsSorted(false); // 정렬 상태를 false로 설정
     };
 
     return (
@@ -86,7 +83,7 @@ const CustomTable = ({ data }) => {
                     </thead>
                     <tbody>
                         {/* 정렬된 데이터가 있으면 정렬된 데이터 사용, 아니면 원본 데이터 사용 */}
-                        {(isSorted ? sortedData : data).map((data) => (
+                        {(isSorted ? sortedData : dataValue).map((data) => (
                             <CustomTableRow key={data.id} data={data} />
                         ))}
                     </tbody>
