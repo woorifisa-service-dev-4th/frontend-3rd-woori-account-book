@@ -7,10 +7,12 @@ import { InputContext, InputProvider } from "../src/contexts/InputContext";
 import Input from "../src/components/input/Input";
 
 const App = () => {
+  
 
     return (
         <>
             <DefaultLayout>
+
                 <InputProvider>
                     <Input />
                     <Main>

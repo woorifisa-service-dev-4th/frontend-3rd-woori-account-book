@@ -3,7 +3,7 @@ import GraphBars from './GraphBars';
 import GraphHeader from './GraphHeader';
 
 
-const GraphContainer = ({ data }) => {
+const GraphContainer = () => {
 
   const [showType , setShowType]=useState('all');
   
@@ -14,7 +14,7 @@ const GraphContainer = ({ data }) => {
   return (
     <>
       <GraphHeader onTypeClick={handleTypeClick}/>
-      <GraphBars data={data} showType={showType} />
+      <GraphBars  showType={showType} />
     </>
   );
 };
