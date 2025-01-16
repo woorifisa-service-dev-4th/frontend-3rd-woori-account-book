@@ -10,7 +10,7 @@ const CustomTable = () => {
 
     // 공통 정렬 함수
     const sortTable = (column, isAscending, isDateSort = false) => {
-        const sortedRows = [...data].sort((rowA, rowB) => {
+        const sortedRows = [...dataValue].sort((rowA, rowB) => {
             let valueA = rowA[column];
             let valueB = rowB[column];
 
