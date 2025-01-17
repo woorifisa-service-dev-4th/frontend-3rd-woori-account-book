@@ -4,9 +4,6 @@
 ## 💵 서비스 소개
 우리 FISA 서비스 개발 과정 토이프로젝트로 react를 활용한 가계부 페이지입니다.
 
-### 📍 site
-
-
 </br>
 
 ### 📍 Branch Name Rule
