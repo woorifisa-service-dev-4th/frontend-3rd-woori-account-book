@@ -74,5 +74,6 @@ fronted-3rd-woori-account-book
 
 
 ### 📍 완성된 페이지 
+http://192.168.0.34:4173/ 
 <img width="1552" alt="image" src="https://github.com/user-attachments/assets/aab87866-44c2-4369-8316-2fa529b84973" />
 
